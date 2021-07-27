@@ -1,0 +1,15 @@
+/* Write your CSS here */
+.button {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 10px;
+  width: 45%;
+  border-radius: 10px;
+  background-color: #382f5a;
+  border: 1px solid #c4c4c4;
+  font-size: 20px;
+  color: #c4c4c4;
+  font-weight: 700;
+}

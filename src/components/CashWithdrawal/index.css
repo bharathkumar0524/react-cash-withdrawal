@@ -1,0 +1,59 @@
+/* Write your CSS here */
+.cash-withdrawal-bg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.cash-withdrawal-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #150b3e;
+  border-radius: 15px;
+  padding: 30px;
+  width: 40%;
+}
+.name-container {
+  display: flex;
+  align-items: center;
+}
+.initial-letter {
+  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #7c3aed;
+  background-color: #c7d2fe;
+  margin-right: 10px;
+}
+.name {
+  color: #d4d2db;
+  font-size: 28px;
+  font-weight: 500;
+  font-family: 'Roboto';
+}
+.balance-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.balance-heading {
+  color: #585076;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Roboto';
+}
+.cash {
+  color: #d4d2db;
+  font-size: 30px;
+}
+.rupees {
+  color: #585076;
+  font-size: 15px;
+  font-weight: bold;
+}
+.denomination {
+  list-style-type: none;
+}
