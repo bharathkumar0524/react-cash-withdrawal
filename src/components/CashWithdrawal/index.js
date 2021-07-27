@@ -12,27 +12,30 @@ class CashWithdrawal extends Component {
     }))
   }
 
+  getFirstCharOfName = name => name.slice(0, 1)
+
   render() {
     const {cash} = this.state
     const {denominationsList} = this.props
+    const name = 'Sarah Williams'
+    const initial = this.getFirstCharOfName(name)
     return (
       <div className="cash-withdrawal-bg-container">
         <div className="cash-withdrawal-container">
           <div className="name-container">
-            <p className="initial-letter">S</p>
-            <h1 className="name">Sarah Williams</h1>
+            <p className="initial-letter">{initial}</p>
+            <p className="name">{name}</p>
           </div>
           <div className="balance-container">
-            <div>
-              <h1 className="balance-heading">Your Balance</h1>
-            </div>
-            <div>
-              <h1 className="cash">{cash}</h1>
-              <p className="rupees">In Rupees</p>
-            </div>
+            <p className="balance-heading">Your Balance</p>
+            <p className="cash">
+              {cash}
+              <br />
+              <span className="rupees">In Rupees</span>
+            </p>
           </div>
           <div>
-            <h1 className="cash">Withdraw</h1>
+            <p className="cash">Withdraw</p>
             <p className="rupees">CHOOSE SUM (IN RUPEES)</p>
             <ul className="denomination">
               {denominationsList.map(each => (

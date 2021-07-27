@@ -8,7 +8,7 @@ const DenominationItem = props => {
     denominationValue(value)
   }
   return (
-    <li>
+    <li className="denomination-item">
       <button className="button" type="button" onClick={onClickValue}>
         {value}
       </button>
